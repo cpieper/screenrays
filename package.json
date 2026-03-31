@@ -1,0 +1,57 @@
+{
+  "name": "screenrays",
+  "title": "ScreenRays",
+  "description": "Automatically copies new screenshots to clipboard history",
+  "icon": "screenrays-icon.png",
+  "author": "cpieper",
+  "categories": ["Productivity"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "monitor-screenshots",
+      "title": "Monitor Screenshots",
+      "description": "Watches your screenshots folder and copies new screenshots to clipboard",
+      "mode": "menu-bar",
+      "interval": "15s"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "screenshotsDirectory",
+      "type": "directory",
+      "title": "Screenshots Directory",
+      "description": "The directory where your screenshots are saved",
+      "required": true,
+      "default": "~/Desktop/Screenshots"
+    },
+    {
+      "name": "enableLogging",
+      "type": "checkbox",
+      "title": "Enable Logging",
+      "description": "Log debug information to the Raycast developer console",
+      "required": false,
+      "default": false,
+      "label": "Enable debug logging"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.93.3",
+    "@raycast/utils": "^1.19.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22.13.14",
+    "@types/react": "19.0.12",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"Error: no publish\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
