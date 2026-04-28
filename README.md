@@ -33,10 +33,10 @@ defaults read com.apple.screencapture location
 
 ## Preferences
 
-| Preference | Type | Default | Description |
-|---|---|---|---|
-| Screenshots Directory | Directory | `~/Desktop/Screenshots` | The folder where your screenshots are saved |
-| Enable Logging | Checkbox | Off | Log debug information to the Raycast developer console |
+| Preference            | Type      | Default                 | Description                                            |
+| --------------------- | --------- | ----------------------- | ------------------------------------------------------ |
+| Screenshots Directory | Directory | `~/Desktop/Screenshots` | The folder where your screenshots are saved            |
+| Enable Logging        | Checkbox  | Off                     | Log debug information to the Raycast developer console |
 
 ## Troubleshooting
 

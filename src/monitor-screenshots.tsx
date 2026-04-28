@@ -89,7 +89,9 @@ export default function Command() {
 
     // Find new files since last check
     const newFiles = allScreenshots.filter((s) => s.createdAt.getTime() > lastProcessed);
-    log(`ScreenRays: found ${allScreenshots.length} total, ${newFiles.length} new since ${new Date(lastProcessed).toISOString()}`);
+    log(
+      `ScreenRays: found ${allScreenshots.length} total, ${newFiles.length} new since ${new Date(lastProcessed).toISOString()}`,
+    );
 
     if (newFiles.length > 0) {
       // Update the marker to the newest file
@@ -135,10 +137,7 @@ export default function Command() {
         </MenuBarExtra.Section>
       )}
       <MenuBarExtra.Section>
-        <MenuBarExtra.Item
-          title="Open Screenshots Folder"
-          onAction={() => open(directory)}
-        />
+        <MenuBarExtra.Item title="Open Screenshots Folder" onAction={() => open(directory)} />
       </MenuBarExtra.Section>
     </MenuBarExtra>
   );
