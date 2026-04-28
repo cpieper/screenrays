@@ -41,10 +41,10 @@
     "@raycast/utils": "^1.19.1"
   },
   "devDependencies": {
-    "@raycast/eslint-config": "^1.0.11",
+    "@raycast/eslint-config": "^2.1.1",
     "@types/node": "22.13.14",
     "@types/react": "19.0.12",
-    "eslint": "^8.57.0",
+    "eslint": "^9.22.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
   },
@@ -54,7 +54,7 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "typecheck": "tsc --noEmit",
-    "lint:eslint": "eslint . --ext .ts,.tsx",
+    "lint:eslint": "eslint .",
     "format:check": "prettier --check .",
     "prepublishOnly": "echo \"Error: no publish\" && exit 1",
     "publish": "npx @raycast/api@latest publish"
